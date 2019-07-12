@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/nameText"
+        style="@style/NameStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/nickNameEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/NameStyle"
+        android:inputType="textPersonName"
+        android:hint="@string/whatis"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/doneButton"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Done"
+        android:layout_gravity="center"
+        android:fontFamily="@font/roboto"/>
+
+    <TextView
+        android:id="@+id/nicknametext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        style="@style/NameStyle"
+        android:textAlignment="center"/>
+
+    <ImageView
+        android:id="@+id/starImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/yellow_star"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/bioText"
+            style="@style/NameStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:lineSpacingMultiplier="1.2"
+            android:padding="8dp"
+            android:text="@string/lorem_text" />
+
+    </ScrollView>
+
+</LinearLayout>
